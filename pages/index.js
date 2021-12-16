@@ -69,8 +69,8 @@ export default function Home() {
                         </span>
                     </h1>
                 )}
-                {suckCount.map(() => (
-                    <video loop autoPlay muted className="w-1/8 h-1/2">
+                {suckCount.map((vid, index) => (
+                    <video key={index} loop autoPlay muted className="w-1/8 h-1/2">
                         <source src="kissfinal.mp4" type="video/mp4" />
                     </video>
                 ))}
